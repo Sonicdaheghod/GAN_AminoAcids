@@ -25,6 +25,8 @@ Languages/ Technologies used:
 
 * Jupyter Notebook
 
+* Kaggle
+
 * Python3
   
 ## Setup

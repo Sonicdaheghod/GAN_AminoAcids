@@ -60,6 +60,14 @@ from sklearn import svm
 from sklearn.svm import SVC
 ```
 ## Using the Program
+1) Data Cleaning and Preprocessing
+
+
+2) SVM Model
+
+
+3) Evaluating Model
+
 
 ## Credits
 

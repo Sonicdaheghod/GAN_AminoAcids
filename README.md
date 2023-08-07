@@ -48,6 +48,8 @@ sys.version
 Import the following libraries:
 
 ```
+
+#for model
 %matplotlib inline
 import argparse
 import os
@@ -62,6 +64,8 @@ import torchvision.datasets as dset
 import torchvision.transforms as transforms
 import torchvision.utils as vutils
 import numpy as np
+
+#showing generation of fake images
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 from IPython.display import HTML

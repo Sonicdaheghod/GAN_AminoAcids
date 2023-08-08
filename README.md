@@ -75,6 +75,39 @@ from IPython.display import HTML
 ```
 ## Using the Program
 
+1) Essential Variables
+
+There are variables defined that are used for preparing the dataset, setting up the GAN model, and displaying the results.
+
+1a) Increased Epochs
+
+I increased the number of epochs to 500 so the model would be better trained to produce fake images that were similar to the real images. Using the original number of epochs lead to fake images that appeared as noise.
+
+```
+# Number of training epochs
+num_epochs = 500 # Original is 5 on a dataset of 1 million
+
+```
+
+2) DCGAN Implementation
+* Weights initialized to prevent vanishing gradient problem.
+* Generator was set up for producing fake images that could pass off as real images.
+* Discriminator set up for detecting if an image was real or fake.
+* Loss function detects differences between real and fake images, optimizer minimizes those differences.
+* Dataset is then run through the model using the number of epochs, steps, and learning rate defined in variables.
+  
+3) Results
+
+* Peformance of both gneerator and discriminator visualized using loss plot. Plot shows stability of both, so generator products images that pass off as "real" and discriminator can distinguish between real and fake image.
+![image](https://github.com/Sonicdaheghod/GAN_AminoAcids/assets/68253811/996bdfa7-5a75-4bb8-8bc5-87829a83e46e)
+
+* The loop of the training process was also included in the code. This shows the process of how the model wa learned how to produce amino acids that were siliar to that in the training dataset.
+  
+* Real images vs fake images are shown for comparison.
+<img width="586" alt="image" src="https://github.com/Sonicdaheghod/GAN_AminoAcids/assets/68253811/720c933c-ae98-4250-aa58-7b57e244e6de">
+
+
+
 
 ## Credits
 
